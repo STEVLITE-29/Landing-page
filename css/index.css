@@ -1,0 +1,53 @@
+/* My color choice */
+:root {
+  --Primarycolor: #0a1128; /* Midnight Navy Blue */
+  --Secondarycolor: #3d5a80; /* Muted Ocean Blue */
+  --Accentcolor: #ee6c4d; /* Burnt Orange */
+  --Textcolorprimary: #e0fbfc; /* Icy Mint White */
+  --Textcolorsecondary: #98c1d9; /* Soft Sky Blue */
+}
+
+/* styles for the header */
+header {
+  background-color: var(--Primarycolor);
+  color: var(--Textcolorprimary);
+  font-family: Montserrat;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbarbrand a {
+  text-decoration: none;
+  color: var(--Textcolorprimary);
+  font-weight: 800;
+  font-size: 27px;
+}
+
+#navbarmenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.navlinks {
+  margin: 0 20px;
+  text-decoration: none;
+  color: var(--Textcolorprimary);
+  font-size: 18px;
+  align-self: center;
+}
+
+.button {
+  padding: 8px 12px;
+  background-color: var(--Accentcolor);
+  border: none;
+  border-radius: 20px;
+  color: var(--Textcolorprimary);
+  font-weight: 500;
+  font-size: 20px;
+}
