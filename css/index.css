@@ -12,6 +12,8 @@ header {
   background-color: var(--Primarycolor);
   color: var(--Textcolorprimary);
   font-family: Montserrat;
+  top: 0;
+  position: sticky;
 }
 
 #navbar {
@@ -24,7 +26,7 @@ header {
   text-decoration: none;
   color: var(--Textcolorprimary);
   font-weight: 800;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 #navbarmenu {
@@ -38,16 +40,16 @@ header {
   margin: 0 20px;
   text-decoration: none;
   color: var(--Textcolorprimary);
-  font-size: 18px;
+  font-size: 16px;
   align-self: center;
 }
 
 .button {
-  padding: 8px 12px;
+  padding: 5px 12px;
   background-color: var(--Accentcolor);
   border: none;
   border-radius: 20px;
   color: var(--Textcolorprimary);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
