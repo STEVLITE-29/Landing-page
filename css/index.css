@@ -5,6 +5,12 @@
   --Accentcolor: #ee6c4d; /* Burnt Orange */
   --Textcolorprimary: #e0fbfc; /* Icy Mint White */
   --Textcolorsecondary: #98c1d9; /* Soft Sky Blue */
+  --Airvault: linear-gradient(
+    90deg,
+    rgba(224, 251, 252, 1) 0%,
+    rgba(238, 108, 77, 1) 35%,
+    rgba(152, 193, 217, 1) 76%
+  );
 }
 
 /* styles for the header */
@@ -24,7 +30,9 @@ header {
 
 #navbarbrand a {
   text-decoration: none;
-  color: var(--Textcolorprimary);
+  background: var(--Airvault);
+  -webkit-background-clip: text;
+  color: transparent;
   font-weight: 800;
   font-size: 24px;
 }
@@ -52,4 +60,31 @@ header {
   color: var(--Textcolorprimary);
   font-weight: 500;
   font-size: 16px;
+}
+
+/* Styles for the Main: Hero section */
+
+main {
+  background-color: var(--Primarycolor);
+  color: var(--Textcolorprimary);
+  font-family: Montserrat;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-text {
+  background: var(--Airvault);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h-img {
+  width: 100%; /* Make the image take the full width of its parent */
+  max-width: 90vw; /* Restrict it to 90% of the viewport width */
+  max-height: 88vh; /* Restrict it to 80% of the viewport height */
+  height: auto; /* Maintain the aspect ratio */
 }
