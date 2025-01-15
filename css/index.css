@@ -13,6 +13,10 @@
   );
 }
 
+#home {
+  background-color: var(--Primarycolor);
+}
+
 /* styles for the header */
 header {
   background-color: var(--Primarycolor);
@@ -100,6 +104,7 @@ main {
   border-radius: 10px;
   padding: 40px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 /* Product Card Styling */
@@ -147,4 +152,33 @@ main {
 
 button:hover {
   background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* footer */
+footer {
+  border-top: 1px solid var(--Accentcolor);
+}
+
+#footer {
+  color: var(--Textcolorsecondary);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+#footer ul a {
+  text-decoration: none;
+  color: var(--Textcolorsecondary);
+}
+
+.fa {
+  background: var(--Airvault);
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
