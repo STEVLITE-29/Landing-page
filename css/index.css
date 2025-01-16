@@ -69,7 +69,6 @@ header {
 }
 
 /* Styles for the Main: Hero section */
-
 main {
   background-color: var(--Primarycolor);
   color: var(--Textcolorprimary);
@@ -89,7 +88,6 @@ main {
 }
 
 /* hero: image section */
-
 .h-img {
   width: 100%; /* Make the image take the full width of its parent */
   max-width: 90vw; /* Restrict it to 90% of the viewport width */
@@ -98,7 +96,6 @@ main {
 }
 
 /* products section styles */
-/* Container Styling */
 #products-cont {
   background-color: var(--Secondarycolor);
   border-radius: 10px;
@@ -109,49 +106,45 @@ main {
 
 /* Product Card Styling */
 .product-card {
-  border-radius: 12px; /* Rounded corners */
-  padding: 20px; /* Inner padding */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
 .product-card:hover {
-  transform: translateY(-8px); /* Lift on hover */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Product Image */
 .product-img {
   width: 100%;
-  max-height: 150px; /* Restrict height */
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded image corners */
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 15px;
-  transition: transform 0.3s ease; /* Smooth zoom on hover */
+  transition: transform 0.3s ease;
 }
 
 .product-card:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05);
 }
 
-/* Product Name */
 .product-name {
   font-size: 18px;
-  color: var(--); /* Dark text */
   margin-bottom: 10px;
 }
 
-/* Product Description */
 .product-description {
   font-size: 14px;
   color: var(--Primarycolor);
   margin-bottom: 20px;
-  line-height: 1.5; /* Better readability */
+  line-height: 1.5;
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 /* footer */
@@ -181,4 +174,69 @@ footer {
   -webkit-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Media Query for Tablet Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbarmenu {
+    flex-direction: row;
+  }
+
+  #hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #hero-section .col-lg-6 {
+    margin-bottom: 20px;
+  }
+
+  .h-img {
+    max-width: 80vw;
+  }
+
+  #product-row {
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+
+/* Media Query for Mobile Devices (Max Width: 576px) */
+@media (max-width: 576px) {
+  header {
+    text-align: center;
+    border-bottom: 1px solid var(--Accentcolor);
+  }
+
+  #navbarmenu {
+    flex-direction: row;
+  }
+
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #products-cont {
+    padding: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .product-img {
+    max-height: 120px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
